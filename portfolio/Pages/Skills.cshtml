@@ -1,0 +1,304 @@
+@page
+@namespace portfolio.Pages
+@model SkillsModel
+@{
+    ViewData["Title"] = "Skills - Jomell Alba";
+}
+
+<!-- Page Header -->
+<section class="page-header bg-light py-5">
+    <div class="container-lg text-center">
+        <h1 class="display-4 fw-bold mb-2">My Skills</h1>
+        <p class="lead text-muted">Technical expertise and competencies</p>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills-section py-5">
+    <div class="container-lg">
+        <!-- Programming Languages -->
+        <div class="skill-category mb-5 pb-5 border-bottom">
+            <h2 class="display-6 fw-bold mb-4">
+                <i class="fas fa-code text-primary me-3"></i>Programming Languages
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">Python</h5>
+                        <p class="text-muted mb-3">Expert level</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                        <small class="text-muted">Data Science, ML, Web Development</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">C#</h5>
+                        <p class="text-muted mb-3">Advanced level</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                        <small class="text-muted">ASP.NET Core, Backend Development</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">JavaScript</h5>
+                        <p class="text-muted mb-3">Advanced level</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                        <small class="text-muted">Frontend, React, Web Development</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">SQL</h5>
+                        <p class="text-muted mb-3">Advanced level</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%;"></div>
+                        </div>
+                        <small class="text-muted">Database Design, Query Optimization</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">Java</h5>
+                        <p class="text-muted mb-3">Intermediate level</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                        <small class="text-muted">Backend Development, OOP</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">HTML/CSS</h5>
+                        <p class="text-muted mb-3">Advanced level</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%;"></div>
+                        </div>
+                        <small class="text-muted">Responsive Design, Web Styling</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Frameworks & Libraries -->
+        <div class="skill-category mb-5 pb-5 border-bottom">
+            <h2 class="display-6 fw-bold mb-4">
+                <i class="fas fa-cube text-primary me-3"></i>Frameworks & Libraries
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">ASP.NET Core</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                        <small class="text-muted">Full Stack Web Development</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">React</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                        <small class="text-muted">Frontend Framework</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">TensorFlow</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%;"></div>
+                        </div>
+                        <small class="text-muted">Deep Learning Framework</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">Scikit-Learn</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%;"></div>
+                        </div>
+                        <small class="text-muted">Machine Learning Library</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">Django</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                        <small class="text-muted">Python Web Framework</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">Bootstrap</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%;"></div>
+                        </div>
+                        <small class="text-muted">CSS Framework</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Science & AI -->
+        <div class="skill-category mb-5 pb-5 border-bottom">
+            <h2 class="display-6 fw-bold mb-4">
+                <i class="fas fa-brain text-primary me-3"></i>Data Science & AI
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">Machine Learning</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                        <small class="text-muted">Supervised & Unsupervised Learning</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">Deep Learning</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                        <small class="text-muted">Neural Networks, CNNs, RNNs</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">Data Analysis</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%;"></div>
+                        </div>
+                        <small class="text-muted">Statistical Analysis, EDA</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skill-category mb-5 pb-5 border-bottom">
+            <h2 class="display-6 fw-bold mb-4">
+                <i class="fas fa-tools text-primary me-3"></i>Tools & Platforms
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">Git & GitHub</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%;"></div>
+                        </div>
+                        <small class="text-muted">Version Control, Collaboration</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">Azure</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                        <small class="text-muted">Cloud Services, Deployment</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">Docker</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%;"></div>
+                        </div>
+                        <small class="text-muted">Containerization, CI/CD</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">Visual Studio</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                        <small class="text-muted">Development Environment</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">Jupyter Notebook</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%;"></div>
+                        </div>
+                        <small class="text-muted">Data Analysis & Research</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h5 class="fw-bold mb-3">Linux</h5>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                        <small class="text-muted">Server Administration</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-category">
+            <h2 class="display-6 fw-bold mb-4">
+                <i class="fas fa-handshake text-primary me-3"></i>Soft Skills
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="soft-skill-card">
+                        <h5 class="fw-bold mb-2">
+                            <i class="fas fa-comments text-primary me-2"></i>Communication
+                        </h5>
+                        <p class="text-muted">Clear and effective communication with team members and stakeholders</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="soft-skill-card">
+                        <h5 class="fw-bold mb-2">
+                            <i class="fas fa-puzzle-piece text-primary me-2"></i>Problem Solving
+                        </h5>
+                        <p class="text-muted">Analytical thinking and creative approach to challenging problems</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="soft-skill-card">
+                        <h5 class="fw-bold mb-2">
+                            <i class="fas fa-users text-primary me-2"></i>Teamwork
+                        </h5>
+                        <p class="text-muted">Collaborative mindset with ability to work in diverse teams</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="soft-skill-card">
+                        <h5 class="fw-bold mb-2">
+                            <i class="fas fa-bolt text-primary me-2"></i>Work Under Pressure
+                        </h5>
+                        <p class="text-muted">Ability to deliver quality results in fast-paced environments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section bg-primary text-white py-5">
+    <div class="container-lg text-center">
+        <h2 class="display-6 fw-bold mb-4">Ready to Leverage These Skills?</h2>
+        <p class="lead mb-4">
+            Let's collaborate on projects that make an impact.
+        </p>
+        <a href="/contact" class="btn btn-light btn-lg">
+            Let's Connect <i class="fas fa-envelope ms-2"></i>
+        </a>
+    </div>
+</section>

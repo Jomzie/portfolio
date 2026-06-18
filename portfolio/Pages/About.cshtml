@@ -1,0 +1,179 @@
+@page
+@namespace portfolio.Pages
+@model AboutModel
+@{
+    ViewData["Title"] = "About - Jomell Alba";
+}
+
+<!-- Page Header -->
+<section class="page-header bg-light py-5">
+    <div class="container-lg text-center">
+        <h1 class="display-4 fw-bold mb-2">About Me</h1>
+        <p class="lead text-muted">Get to know my journey and expertise</p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="about-content py-5">
+    <div class="container-lg">
+        <!-- Introduction -->
+        <div class="row align-items-center mb-5 pb-5 border-bottom">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="about-image-large">
+                    <img src="/images/profile.jpg?v=@DateTime.Now.Ticks" alt="Jomell Alba" class="about-image" />
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="display-6 fw-bold mb-4">Who Am I?</h2>
+                <p class="lead text-muted mb-3">
+                    I'm <strong>Jomell Prinz E. Alba</strong>, a passionate Computer Science graduate from the 
+                    <strong>University of Santo Tomas</strong>, one of the Philippines' most prestigious institutions.
+                </p>
+                <p class="text-muted mb-3">
+                    During my academic years, I focused extensively on Data Science and Artificial Intelligence, 
+                    consistently maintaining Dean's List status. My journey has equipped me with a diverse skill set 
+                    spanning full-stack development, machine learning, and system design.
+                </p>
+                <p class="text-muted mb-4">
+                    Beyond technical skills, I take pride in my ability to work effectively under pressure, 
+                    communicate clearly with teams, and translate complex problems into elegant solutions.
+                </p>
+                <div class="d-flex gap-3">
+                    <div>
+                        <h5 class="text-primary fw-bold">10+</h5>
+                        <p class="text-muted small">Projects Completed</p>
+                    </div>
+                    <div>
+                        <h5 class="text-primary fw-bold">3+</h5>
+                        <p class="text-muted small">Years Experience</p>
+                    </div>
+                    <div>
+                        <h5 class="text-primary fw-bold">100%</h5>
+                        <p class="text-muted small">Dedication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="row mb-5 pb-5 border-bottom">
+            <div class="col-lg-6">
+                <h2 class="display-6 fw-bold mb-4">Education</h2>
+                <p class="text-muted mb-4">
+                    My foundation is built on rigorous academic training in computer science with a strategic focus on emerging technologies.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h5 class="fw-bold">Bachelor of Computer Science</h5>
+                        <p class="text-primary fw-bold mb-2">University of Santo Tomas</p>
+                        <p class="text-muted mb-2">Specialization: Data Science</p>
+                        <p class="text-muted small">
+                            <i class="fas fa-star text-warning"></i> Consistent Dean's Lister
+                        </p>
+                        <ul class="text-muted small mt-3 ps-3">
+                            <li>Focus: Artificial Intelligence & Machine Learning</li>
+                            <li>Focus: Full Stack Deployment</li>
+                            <li>Focus: Data Analysis & Visualization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Specializations -->
+        <div class="mb-5 pb-5">
+            <h2 class="display-6 fw-bold mb-4 text-center">Specializations</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="spec-card">
+                        <div class="spec-icon">
+                            <i class="fas fa-brain fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 mb-2">Artificial Intelligence</h5>
+                        <p class="text-muted">
+                            Building intelligent systems and predictive models that learn and adapt to solve complex problems.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="spec-card">
+                        <div class="spec-icon">
+                            <i class="fas fa-chart-bar fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 mb-2">Data Science</h5>
+                        <p class="text-muted">
+                            Extracting insights from data, performing statistical analysis, and creating data-driven solutions.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="spec-card">
+                        <div class="spec-icon">
+                            <i class="fas fa-code fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 mb-2">Full Stack Development</h5>
+                        <p class="text-muted">
+                            Creating end-to-end web applications with modern frameworks, responsive design, and scalable architectures.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work Approach -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6 mb-4 mb-lg-0 order-lg-2">
+                <div class="approach-image">
+                    <div class="placeholder-image-lg">
+                        <i class="fas fa-lightbulb fa-8x text-primary opacity-10"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <h2 class="display-6 fw-bold mb-4">My Approach</h2>
+                <div class="approach-list">
+                    <div class="approach-item mb-3">
+                        <h5 class="fw-bold text-primary">
+                            <i class="fas fa-check-circle me-2"></i>Problem-First Mindset
+                        </h5>
+                        <p class="text-muted ps-4">Understanding the core problem before jumping to solutions ensures effective results.</p>
+                    </div>
+                    <div class="approach-item mb-3">
+                        <h5 class="fw-bold text-primary">
+                            <i class="fas fa-check-circle me-2"></i>Data-Driven Decisions
+                        </h5>
+                        <p class="text-muted ps-4">Leveraging data and analytics to validate assumptions and guide development choices.</p>
+                    </div>
+                    <div class="approach-item mb-3">
+                        <h5 class="fw-bold text-primary">
+                            <i class="fas fa-check-circle me-2"></i>Continuous Learning
+                        </h5>
+                        <p class="text-muted ps-4">Staying updated with emerging technologies and best practices in the field.</p>
+                    </div>
+                    <div class="approach-item">
+                        <h5 class="fw-bold text-primary">
+                            <i class="fas fa-check-circle me-2"></i>Collaborative Teamwork
+                        </h5>
+                        <p class="text-muted ps-4">Communicating effectively and working harmoniously to achieve shared goals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section bg-primary text-white py-5">
+    <div class="container-lg text-center">
+        <h2 class="display-6 fw-bold mb-4">Want to Work Together?</h2>
+        <p class="lead mb-4">
+            I'm always interested in hearing about new projects and opportunities.
+        </p>
+        <a href="/contact" class="btn btn-light btn-lg">
+            Get In Touch <i class="fas fa-envelope ms-2"></i>
+        </a>
+    </div>
+</section>

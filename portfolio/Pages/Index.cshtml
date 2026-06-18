@@ -1,0 +1,245 @@
+@page
+@namespace portfolio.Pages
+@model IndexModel
+@{
+    ViewData["Title"] = "Home - Jomell Alba Portfolio";
+}
+
+<!-- Hero Section -->
+<section class="hero-section d-flex align-items-center justify-content-center min-vh-100">
+    <div class="container-lg text-center">
+        <div class="hero-content fade-in-down">
+            <p class="subtitle mb-3 text-muted animate-subtle">Welcome to my portfolio</p>
+            <h1 class="display-3 fw-bold mb-4">Jomell Prinz E. Alba</h1>
+
+            <!-- Typing Effect Container -->
+            <div class="typing-container mb-4">
+                <h2 class="display-6 text-primary">
+                    <span id="typing-text"></span><span class="cursor">|</span>
+                </h2>
+            </div>
+
+            <p class="lead text-muted mx-auto" style="max-width: 600px; line-height: 1.8;">
+                Computer Science Graduate from University of Santo Tomas | 
+                Specialized in Data Science & AI | 
+                Full Stack Developer
+            </p>
+
+            <div class="cta-buttons mt-5">
+                <a href="/projects" class="btn btn-primary btn-lg me-3 animate-scale">
+                    View My Work
+                </a>
+                <a href="/contact" class="btn btn-outline-primary btn-lg animate-scale" style="animation-delay: 0.1s;">
+                    Get In Touch
+                </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links-hero mt-5">
+                <a href="https://github.com/Jomzie" target="_blank" class="social-link-hero" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jomell-alba-1290a025a/" target="_blank" class="social-link-hero" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:albajomell@gmail.com" class="social-link-hero" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+        <span class="mouse">
+            <span class="wheel"></span>
+        </span>
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section py-5 bg-light">
+    <div class="container-lg">
+        <div class="row align-items-center">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+                <div class="about-image-wrapper">
+                    <img src="/images/profile.jpg?v=@DateTime.Now.Ticks" alt="Jomell Alba" class="about-image" />
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <h2 class="display-6 fw-bold mb-4 fade-in">About Me</h2>
+                <p class="lead text-muted mb-3">
+                    I'm a Computer Science graduate from the University of Santo Tomas, one of the Philippines' top universities, 
+                    with a specialization in Data Science. Throughout my academic journey, I consistently maintained Dean's List status.
+                </p>
+                <p class="text-muted mb-3">
+                    My expertise spans across artificial intelligence, machine learning, and full stack application deployment. 
+                    I'm passionate about building intelligent solutions that solve real-world problems. I work well under pressure 
+                    and pride myself on clear communication with team members and stakeholders.
+                </p>
+                <p class="text-muted mb-4">
+                    Whether it's developing web applications, implementing ML models, or architecting scalable systems, 
+                    I bring a comprehensive skill set and a commitment to excellence to every project.
+                </p>
+
+                <div class="achievements mb-4">
+                    <div class="achievement-item">
+                        <h5 class="fw-bold text-primary">
+                            <i class="fas fa-check-circle me-2"></i>University of Santo Tomas
+                        </h5>
+                        <p class="text-muted">Consistent Dean's Lister | Data Science Specialization</p>
+                    </div>
+                    <div class="achievement-item">
+                        <h5 class="fw-bold text-primary">
+                            <i class="fas fa-check-circle me-2"></i>Core Competencies
+                        </h5>
+                        <p class="text-muted">AI/ML Development | Full Stack Development | Data Analysis</p>
+                    </div>
+                </div>
+
+                <a href="/skills" class="btn btn-primary">
+                    Explore My Skills <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Projects Section -->
+<section class="featured-projects py-5">
+    <div class="container-lg">
+        <h2 class="display-6 fw-bold mb-5 text-center">Featured Projects</h2>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <i class="fas fa-network-wired fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mt-3 mb-2">SCS-ID System</h4>
+                    <p class="text-muted mb-3">
+                        Squeezed ConvSeek Intrusion Detection System - Advanced network intrusion monitoring for university infrastructure
+                    </p>
+                    <div class="tech-stack mb-3">
+                        <span class="badge bg-primary-light">Python</span>
+                        <span class="badge bg-primary-light">Deep Learning</span>
+                        <span class="badge bg-primary-light">Network Security</span>
+                    </div>
+                    <a href="https://github.com/snsnzjkt/DSCI8-Thesis-Implementation-" target="_blank" class="btn btn-sm btn-outline-primary">
+                        View Project <i class="fas fa-external-link-alt ms-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card fade-in" style="animation-delay: 0.1s;">
+                    <div class="project-header">
+                        <i class="fas fa-chart-line fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mt-3 mb-2">Data Analysis Projects</h4>
+                    <p class="text-muted mb-3">
+                        Various machine learning and data analysis projects showcasing predictive modeling and data insights
+                    </p>
+                    <div class="tech-stack mb-3">
+                        <span class="badge bg-primary-light">Python</span>
+                        <span class="badge bg-primary-light">ML</span>
+                        <span class="badge bg-primary-light">Data Science</span>
+                    </div>
+                    <a href="/projects" class="btn btn-sm btn-outline-primary">
+                        View All <i class="fas fa-arrow-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card fade-in" style="animation-delay: 0.2s;">
+                    <div class="project-header">
+                        <i class="fas fa-code fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mt-3 mb-2">Full Stack Applications</h4>
+                    <p class="text-muted mb-3">
+                        Web applications built with modern frameworks and best practices for scalability and user experience
+                    </p>
+                    <div class="tech-stack mb-3">
+                        <span class="badge bg-primary-light">ASP.NET Core</span>
+                        <span class="badge bg-primary-light">React</span>
+                        <span class="badge bg-primary-light">Cloud</span>
+                    </div>
+                    <a href="/projects" class="btn btn-sm btn-outline-primary">
+                        View All <i class="fas fa-arrow-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="/projects" class="btn btn-primary btn-lg">
+                See All Projects <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section bg-primary text-white py-5">
+    <div class="container-lg text-center">
+        <h2 class="display-6 fw-bold mb-4">Ready to Collaborate?</h2>
+        <p class="lead mb-4">
+            Let's bring your ideas to life with cutting-edge technology and strategic thinking.
+        </p>
+        <a href="/contact" class="btn btn-light btn-lg">
+            Start a Conversation <i class="fas fa-envelope ms-2"></i>
+        </a>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        // Typing Effect
+        const titles = [
+            'Developer',
+            'Web Developer',
+            'Data Scientist',
+            'AI Enthusiast',
+            'Full Stack Engineer',
+            'Problem Solver'
+        ];
+
+        let titleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingSpeed = 80;
+        const deletingSpeed = 50;
+        const pauseDuration = 2000;
+
+        function typeEffect() {
+            const typingText = document.getElementById('typing-text');
+            const currentTitle = titles[titleIndex];
+
+            if (!isDeleting && charIndex < currentTitle.length) {
+                typingText.textContent += currentTitle[charIndex];
+                charIndex++;
+                setTimeout(typeEffect, typingSpeed);
+            } else if (!isDeleting && charIndex === currentTitle.length) {
+                isDeleting = true;
+                setTimeout(typeEffect, pauseDuration);
+            } else if (isDeleting && charIndex > 0) {
+                typingText.textContent = currentTitle.substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(typeEffect, deletingSpeed);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                titleIndex = (titleIndex + 1) % titles.length;
+                setTimeout(typeEffect, 500);
+            }
+        }
+
+        // Start typing effect when page loads
+        document.addEventListener('DOMContentLoaded', typeEffect);
+    </script>
+}

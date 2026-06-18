@@ -1,0 +1,230 @@
+@page
+@namespace portfolio.Pages
+@model ProjectsModel
+@{
+    ViewData["Title"] = "Projects - Jomell Alba";
+}
+
+<!-- Page Header -->
+<section class="page-header bg-light py-5">
+    <div class="container-lg text-center">
+        <h1 class="display-4 fw-bold mb-2">My Projects</h1>
+        <p class="lead text-muted">Showcasing my work across AI, Data Science, and Web Development</p>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects-section py-5">
+    <div class="container-lg">
+        <!-- Featured Project -->
+        <div class="featured-project mb-5 pb-5 border-bottom">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="project-image-featured">
+                        <div class="project-placeholder">
+                            <i class="fas fa-network-wired fa-10x text-primary opacity-15"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <span class="badge bg-primary mb-3">Featured</span>
+                    <h2 class="display-6 fw-bold mb-3">SCS-ID: Squeezed ConvSeek Intrusion Detection System</h2>
+                    <p class="lead text-muted mb-4">
+                        A sophisticated network intrusion detection system built using advanced deep learning techniques 
+                        to monitor and identify suspicious activities in university network infrastructure.
+                    </p>
+
+                    <div class="project-details mb-4">
+                        <div class="detail-item mb-3">
+                            <h6 class="fw-bold text-primary mb-2">
+                                <i class="fas fa-bullseye me-2"></i>Objective
+                            </h6>
+                            <p class="text-muted">
+                                Develop an intelligent system to detect and monitor network intrusions in real-time, 
+                                providing security insights for institutional infrastructure.
+                            </p>
+                        </div>
+                        <div class="detail-item mb-3">
+                            <h6 class="fw-bold text-primary mb-2">
+                                <i class="fas fa-hammer me-2"></i>Technologies
+                            </h6>
+                            <div class="tech-stack">
+                                <span class="badge bg-primary-light">Python</span>
+                                <span class="badge bg-primary-light">Deep Learning</span>
+                                <span class="badge bg-primary-light">ConvSeek Architecture</span>
+                                <span class="badge bg-primary-light">Network Security</span>
+                                <span class="badge bg-primary-light">TensorFlow</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <h6 class="fw-bold text-primary mb-2">
+                                <i class="fas fa-lightbulb me-2"></i>Key Features
+                            </h6>
+                            <ul class="text-muted ps-4">
+                                <li>Real-time network traffic analysis</li>
+                                <li>Deep squeeze convolution architecture for efficient processing</li>
+                                <li>High accuracy intrusion detection</li>
+                                <li>Scalable for institutional networks</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="https://github.com/snsnzjkt/DSCI8-Thesis-Implementation-" target="_blank" class="btn btn-primary btn-lg me-3">
+                            <i class="fab fa-github me-2"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Projects Grid -->
+        <h3 class="display-6 fw-bold mb-4 mt-5">Other Projects</h3>
+        <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-md-6 col-lg-4 fade-in">
+                <div class="project-card-full">
+                    <div class="project-card-header">
+                        <i class="fas fa-chart-line fa-4x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mt-3 mb-2">Machine Learning Models</h5>
+                    <p class="text-muted text-sm mb-3">
+                        Collection of ML models for classification, regression, and clustering tasks with comprehensive validation.
+                    </p>
+                    <div class="tech-stack mb-3">
+                        <span class="badge bg-secondary-light">Python</span>
+                        <span class="badge bg-secondary-light">Scikit-Learn</span>
+                        <span class="badge bg-secondary-light">NumPy</span>
+                        <span class="badge bg-secondary-light">Pandas</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-outline-primary">
+                        Learn More <i class="fas fa-arrow-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-6 col-lg-4 fade-in" style="animation-delay: 0.1s;">
+                <div class="project-card-full">
+                    <div class="project-card-header">
+                        <i class="fas fa-database fa-4x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mt-3 mb-2">Data Analysis & Visualization</h5>
+                    <p class="text-muted text-sm mb-3">
+                        Statistical analysis projects with interactive visualizations revealing data insights and trends.
+                    </p>
+                    <div class="tech-stack mb-3">
+                        <span class="badge bg-secondary-light">Python</span>
+                        <span class="badge bg-secondary-light">Matplotlib</span>
+                        <span class="badge bg-secondary-light">Plotly</span>
+                        <span class="badge bg-secondary-light">SQL</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-outline-primary">
+                        Learn More <i class="fas fa-arrow-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-6 col-lg-4 fade-in" style="animation-delay: 0.2s;">
+                <div class="project-card-full">
+                    <div class="project-card-header">
+                        <i class="fas fa-code fa-4x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mt-3 mb-2">Web Applications</h5>
+                    <p class="text-muted text-sm mb-3">
+                        Full-stack web applications leveraging modern frameworks for responsive and scalable solutions.
+                    </p>
+                    <div class="tech-stack mb-3">
+                        <span class="badge bg-secondary-light">ASP.NET Core</span>
+                        <span class="badge bg-secondary-light">React</span>
+                        <span class="badge bg-secondary-light">SQL</span>
+                        <span class="badge bg-secondary-light">Azure</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-outline-primary">
+                        Learn More <i class="fas fa-arrow-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="col-md-6 col-lg-4 fade-in" style="animation-delay: 0.3s;">
+                <div class="project-card-full">
+                    <div class="project-card-header">
+                        <i class="fas fa-cogs fa-4x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mt-3 mb-2">API Development</h5>
+                    <p class="text-muted text-sm mb-3">
+                        RESTful and GraphQL APIs with robust error handling, validation, and comprehensive documentation.
+                    </p>
+                    <div class="tech-stack mb-3">
+                        <span class="badge bg-secondary-light">ASP.NET Core</span>
+                        <span class="badge bg-secondary-light">Node.js</span>
+                        <span class="badge bg-secondary-light">REST</span>
+                        <span class="badge bg-secondary-light">GraphQL</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-outline-primary">
+                        Learn More <i class="fas fa-arrow-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="col-md-6 col-lg-4 fade-in" style="animation-delay: 0.4s;">
+                <div class="project-card-full">
+                    <div class="project-card-header">
+                        <i class="fas fa-cloud fa-4x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mt-3 mb-2">Cloud Deployment</h5>
+                    <p class="text-muted text-sm mb-3">
+                        Infrastructure as Code and deployment solutions optimizing application performance and scalability.
+                    </p>
+                    <div class="tech-stack mb-3">
+                        <span class="badge bg-secondary-light">Azure</span>
+                        <span class="badge bg-secondary-light">Docker</span>
+                        <span class="badge bg-secondary-light">CI/CD</span>
+                        <span class="badge bg-secondary-light">Kubernetes</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-outline-primary">
+                        Learn More <i class="fas fa-arrow-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="col-md-6 col-lg-4 fade-in" style="animation-delay: 0.5s;">
+                <div class="project-card-full">
+                    <div class="project-card-header">
+                        <i class="fas fa-mobile-alt fa-4x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mt-3 mb-2">Mobile Solutions</h5>
+                    <p class="text-muted text-sm mb-3">
+                        Cross-platform mobile applications with intuitive UX and powerful functionality for iOS and Android.
+                    </p>
+                    <div class="tech-stack mb-3">
+                        <span class="badge bg-secondary-light">React Native</span>
+                        <span class="badge bg-secondary-light">Flutter</span>
+                        <span class="badge bg-secondary-light">Firebase</span>
+                        <span class="badge bg-secondary-light">UX/UI</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-outline-primary">
+                        Learn More <i class="fas fa-arrow-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section bg-primary text-white py-5">
+    <div class="container-lg text-center">
+        <h2 class="display-6 fw-bold mb-4">Interested in a Project?</h2>
+        <p class="lead mb-4">
+            Let's discuss how I can help bring your ideas to reality.
+        </p>
+        <a href="/contact" class="btn btn-light btn-lg">
+            Start a Conversation <i class="fas fa-envelope ms-2"></i>
+        </a>
+    </div>
+</section>
