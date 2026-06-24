@@ -1,12 +1,8 @@
 [build]
 builder = "nixpacks"
-nixpacks.providers = ["dotnet"]
-
-[build.nixpacks.env]
-DOTNET_VERSION = "10.0"
 
 [deploy]
-startCommand = "dotnet portfolio.dll"
+startCommand = "dotnet out/portfolio.dll"
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 5
 
